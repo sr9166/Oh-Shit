@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.leehyungyu.draw_example.MapWrapperLayout
+        android:id="@+id/map_relative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.leehyungyu.draw_example.MainActivity"
+        tools:showIn="@layout/app_bar_main">
+
+        <fragment
+            android:id="@+id/map"
+            class="com.google.android.gms.maps.MapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+
+    </com.example.leehyungyu.draw_example.MapWrapperLayout>
+
+
+    <RelativeLayout
+        android:layout_width="197dp"
+        android:layout_height="215dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        app:layout_anchor="@id/map"
+        app:layout_anchorGravity="bottom|right"
+        tools:layout_editor_absoluteX="187dp"
+        tools:layout_editor_absoluteY="283dp">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/fab1"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="15dp"
+            android:backgroundTint="#ffffff"
+            android:src="@drawable/ic_location_city_black_24dp"
+            android:visibility="invisible" />
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/fab"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="15dp"
+            android:backgroundTint="#ffffff"
+            android:src="@drawable/ic_search_black_24dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/fatv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fatv2"
+            android:layout_marginTop="30dp"
+            android:layout_toStartOf="@+id/fab2"
+            android:background="#ffffff"
+            android:text="반경 검색"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium"
+            android:visibility="invisible" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="40dp"
+            android:layout_marginRight="15dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:src="@drawable/ic_add_black_24dp" />
+
+        <TextView
+            android:id="@+id/fatv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/fab2"
+            android:layout_toStartOf="@+id/fab2"
+            android:background="#ffffff"
+            android:text="시.군.구 검색"
+            android:layout_marginTop="15dp"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium"
+            android:visibility="invisible" />
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

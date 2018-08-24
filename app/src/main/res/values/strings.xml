@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">JAVA_PRJ</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="kakao_app_key">fc04e487b36de3678541ed7a6ae18233</string>
+    <string name="kakao_scheme">kakaofc04e487b36de3678541ed7a6ae18233</string>
+    <string name="kakaolink_host">kakaolink</string>
+</resources>

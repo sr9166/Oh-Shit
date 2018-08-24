@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.leehyungyu.draw_example">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:icon="@drawable/tissue"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDRNuHsXRQlMC9exPzp_wad3Cwof2xr6wQ" />
+        <!--google maps key-->
+
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="@string/kakao_app_key"/>
+        <!--daum maps key-->
+
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="@string/kakao_scheme"
+                    android:host="@string/kakaolink_host" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:exported="true"/>
+
+        <activity
+            android:name=".ListActivity"
+            android:screenOrientation="portrait"
+            android:exported="true"/>
+
+        <activity
+            android:name=".DetailActivity"
+            android:screenOrientation="portrait"
+            android:exported="true"/>
+
+        <activity android:name=".CreditActivity"
+            android:screenOrientation="landscape"
+            android:exported="true" />
+
+        <activity android:name=".LoginActivity"
+            android:screenOrientation="portrait"
+            android:exported="true" />
+
+        <activity android:name=".SignupActivity"
+            android:screenOrientation="portrait"
+            android:exported="true" />
+
+        <activity android:name=".ProfileAcitivity"
+            android:screenOrientation="portrait"
+            android:exported="true" />
+
+        <activity android:name=".ReviewActivity"
+            android:screenOrientation="portrait"
+            android:exported="true" />
+    </application>
+
+</manifest>
