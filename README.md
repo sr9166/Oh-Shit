@@ -1,19 +1,19 @@
 # Oh-Shit (공공 API를 이용한 공공 화장실 길찾기 어플리케이션)
 
 ## Why Oh-Shit!
-> 1. 화장실이 갑자기 가고 싶을때!
+1. 화장실이 갑자기 가고 싶을때!
 2. 화장실을 가더라도 위생 상태가 나빠 기분이 안좋을때!
 3. 지도를 봐도 생소한 위치라 길을 찾기 힘들때!
 
 ## About Oh-Shit!
-> 1. 오픈 지도API를 이용한 공공화장실 찾기 Application
+1. 오픈 지도API를 이용한 공공화장실 찾기 Application
 2. 화장실에 대한 리뷰, 평점 제공을 통해 전반적인
 평가를 확인 가능
 3. 길찾기 기능을 제공하여 생소한 길도 쉽게찾을
 수 있는 Application
 
 ## Server Environment
-> - Machine : ROCK64 4K60P HDR Media Board Computer 
+- Machine : ROCK64 4K60P HDR Media Board Computer 
 - Server : Apache TomCat
 - DB : Maria DB
 - Editor : vi
